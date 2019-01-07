@@ -10,7 +10,7 @@ export interface ReactScrollLinkProps {
     offset?: number;
     delay?: number;
     isDynamic?: boolean;
-    onClick?(): void;
+    onClick?(e: MouseEvent<HTMLElement>): void;
     duration?: number | string;
     absolute?: boolean;
     onSetActive?(to: string): void;
